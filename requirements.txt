@@ -1,0 +1,7 @@
+bs4
+openai
+halo
+pyaml
+pyPDF2
+flask 
+werkzeug
