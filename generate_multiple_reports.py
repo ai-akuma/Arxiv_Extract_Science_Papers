@@ -6,7 +6,7 @@ import yaml
 import os
 import PyPDF2
 import generate_render_report as reporter
-import glob
+
 
 prompts = [
     "Can you give me a very clear explanation of the core assertions, implications, and mechanics elucidated in this paper?",
@@ -86,7 +86,7 @@ def main(filename):
 
     for pdf_file in pdf_files:
         # Check if the report already exists in the output folder
-        filename = filename.replace(".pdf", ".txt")
+        filename = "output/" + filename.replace(".pdf", ".txt")
         if os.path.exists(filename):
             continue
 
